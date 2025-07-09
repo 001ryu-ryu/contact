@@ -21,6 +21,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavHostController
+import com.devdroid.roomlibrary.nav.Routes
 import com.devdroid.roomlibrary.viewModel.MyViewModel
 
 @Composable
@@ -38,7 +39,7 @@ fun HomeScreen(viewModel: MyViewModel = hiltViewModel(), navController: NavHostC
         floatingActionButton = {
             IconButton(
                 onClick = {
-                    navController.navigate("addContact")
+                    navController.navigate(Routes.AddContact)
                 }
             ) {
                 Icon(
