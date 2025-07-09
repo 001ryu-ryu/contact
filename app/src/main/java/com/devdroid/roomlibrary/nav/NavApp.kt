@@ -14,7 +14,7 @@ fun NavApp(){
 
     NavHost(
         navController = navController,
-        startDestination = "home"
+        startDestination = Routes.Home
     ){
         composable<Routes.Home>{
             HomeScreen(navController = navController)
