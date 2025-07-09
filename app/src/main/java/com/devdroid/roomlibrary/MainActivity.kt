@@ -10,10 +10,10 @@ import androidx.compose.ui.Modifier
 import com.devdroid.roomlibrary.nav.NavApp
 import com.devdroid.roomlibrary.ui.screen.HomeScreen
 import com.devdroid.roomlibrary.ui.theme.RoomLibraryTheme
+import dagger.hilt.android.AndroidEntryPoint
 
 
-
-
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
